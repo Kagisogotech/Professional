@@ -15,7 +15,7 @@ tailwind.config = {
 
    // Typing animation
         const texts = [
-            "Software developer",
+            "Software Developer",
         ];
         let textIndex = 0;
         let charIndex = 0;
