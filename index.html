@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kagiso Monene - Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#1d4ed8',
+                        accent: '#3b82f6',
+                        lightBlue: '#dbeafe',
+                        darkBlue: '#1e3a8a'
+                    }
+                }
+            }
+        }
+    </script>
+
+</head>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="nav-gradient fixed w-full top-0 z-50 border-b border-blue-200/30">
+        <!-- Floating Background Shapes for Navigation -->
+        <div class="nav-floating-shapes">
+            <div class="nav-shape">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="30" cy="30" r="30" fill="url(#navGrad1)"/>
+                    <defs>
+                        <linearGradient id="navGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:0.3" />
+                            <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="nav-shape">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="40" height="40" rx="10" fill="url(#navGrad2)"/>
+                    <defs>
+                        <linearGradient id="navGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:0.2" />
+                            <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:0.2" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="nav-shape">
+                <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="17.5,5 30,30 5,30" fill="url(#navGrad3)"/>
+                    <defs>
+                        <linearGradient id="navGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:0.25" />
+                            <stop offset="100%" style="stop-color:#0891b2;stop-opacity:0.25" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 group">
+                        <div class="flex items-center space-x-3">
+                            <!-- Logo/Avatar -->
+                            <div class="w-12 h-12 bg-gradient-to-br from-primary to-secondary rounded-xl flex items-center justify-center shadow-lg group-hover:shadow-xl transition-all duration-300 group-hover:scale-105">
+                                <span class="text-white font-bold text-xl">KM</span>
+                            </div>
+                            <div>
+                                <h1 class="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">Kagiso Monene</h1>
+                                <p class="text-xs text-gray-500 font-medium">Software developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-1">
+                    <a href="#home" class="nav-link relative px-4 py-2 text-blue hover:text-blue-200 transition-all duration-300 rounded-xl group">
+                        <span class="relative z-10 font-medium">Home</span>
+                        <div class="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/30"></div>
+                    </a>
+                    <a href="#about" class="nav-link relative px-4 py-2 text-blue hover:text-blue-200 transition-all duration-300 rounded-xl group">
+                        <span class="relative z-10 font-medium">About</span>
+                        <div class="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/30"></div>
+                    </a>
+                    <a href="#projects" class="nav-link relative px-4 py-2 text-blue hover:text-blue-200 transition-all duration-300 rounded-xl group">
+                        <span class="relative z-10 font-medium">Projects</span>
+                        <div class="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/30"></div>
+                    </a>
+                    <a href="#certificates" class="nav-link relative px-4 py-2 text-blue hover:text-blue-200 transition-all duration-300 rounded-xl group">
+                        <span class="relative z-10 font-medium">Certificates</span>
+                        <div class="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/30"></div>
+                    </a>
+                    <a href="#skills" class="nav-link relative px-4 py-2 text-blue hover:text-blue-200 transition-all duration-300 rounded-xl group">
+                        <span class="relative z-10 font-medium">Skills</span>
+                        <div class="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/30"></div>
+                    </a>
+                    <a href="#contact" class="nav-link relative px-4 py-2 text-blue hover:text-blue-200 transition-all duration-300 rounded-xl group">
+                        <span class="relative z-10 font-medium">Contact</span>
+                        <div class="absolute inset-0 bg-white/20 backdrop-blur-sm rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300 border border-white/30"></div>
+                    </a>
+                    
+                    <!-- CTA Button -->
+                    <div class="ml-4 pl-4 border-l border-gray-200">
+                        <a href="#contact" class="bg-gradient-to-r from-primary to-secondary text-white px-6 py-2.5 rounded-xl font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300 flex items-center space-x-2">
+                            <span>Hire Me</span>
+                            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-white hover:text-blue-200 p-2 rounded-xl hover:bg-white/20 backdrop-blur-sm transition-all duration-300 border border-white/20">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white/10 backdrop-blur-md border-t border-white/20">
+            <div class="px-4 pt-4 pb-6 space-y-2">
+                <a href="#home" class="block px-4 py-3 text-white hover:text-blue-200 hover:bg-white/20 rounded-xl transition-all duration-300 font-medium backdrop-blur-sm border border-white/10">
+                    🏠 Home
+                </a>
+                <a href="#about" class="block px-4 py-3 text-white hover:text-blue-200 hover:bg-white/20 rounded-xl transition-all duration-300 font-medium backdrop-blur-sm border border-white/10">
+                    👨‍💻 About
+                </a>
+                <a href="#projects" class="block px-4 py-3 text-white hover:text-blue-200 hover:bg-white/20 rounded-xl transition-all duration-300 font-medium backdrop-blur-sm border border-white/10">
+                    🚀 Projects
+                </a>
+                <a href="#certificates" class="block px-4 py-3 text-white hover:text-blue-200 hover:bg-white/20 rounded-xl transition-all duration-300 font-medium backdrop-blur-sm border border-white/10">
+                    🏆 Certificates
+                </a>
+                <a href="#skills" class="block px-4 py-3 text-white hover:text-blue-200 hover:bg-white/20 rounded-xl transition-all duration-300 font-medium backdrop-blur-sm border border-white/10">
+                    ⚡ Skills
+                </a>
+                <a href="#contact" class="block px-4 py-3 text-white hover:text-blue-200 hover:bg-white/20 rounded-xl transition-all duration-300 font-medium backdrop-blur-sm border border-white/10">
+                    📧 Contact
+                </a>
+                <div class="pt-4 border-t border-white/20">
+                    <a href="#contact" class="block bg-gradient-to-r from-blue-600 to-purple-600 text-white px-6 py-3 rounded-xl font-semibold text-center hover:shadow-lg transition-all duration-300 backdrop-blur-sm">
+                        Hire Me
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="gradient-bg min-h-screen flex items-center justify-center text-white pt-16">
+        <!-- Floating Background Shapes -->
+        <div class="floating-shapes">
+            <div class="shape">
+                <svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="60" cy="60" r="60" fill="url(#grad1)"/>
+                    <defs>
+                        <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#3b82f6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#1d4ed8;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="shape">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="80" height="80" rx="20" fill="url(#grad2)"/>
+                    <defs>
+                        <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="shape">
+                <svg width="100" height="100" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="50,10 90,90 10,90" fill="url(#grad3)"/>
+                    <defs>
+                        <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#06b6d4;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#0891b2;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="shape">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M30 0L37.5 22.5L60 30L37.5 37.5L30 60L22.5 37.5L0 30L22.5 22.5L30 0Z" fill="url(#grad4)"/>
+                    <defs>
+                        <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="shape">
+                <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="45" cy="45" rx="45" ry="25" fill="url(#grad5)"/>
+                    <defs>
+                        <linearGradient id="grad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+
+        <!-- Hero Content -->
+        <div class="max-w-4xl mx-auto text-center px-4 hero-content">
+            <div class="fade-in">
+                <h1 class="text-5xl md:text-7xl font-bold mb-6">
+                    <span class="text-cyan-300 glow-effect">Kagiso Monene</span>
+                </h1>
+                <div class="text-2xl md:text-3xl mb-8 h-12">
+                    <span id="typing-text" class="typing-animation text-slate-200"></span>
+                </div>
+                <p class="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-relaxed text-slate-300">
+                    A tech creator turning ideas into interactive web experiences and AI-powered tools. I make learning smarter, digital solutions simpler, and projects that leave an impact. Dive in and see what's possible.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#projects" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 pulse-glow transform hover:scale-105">
+                        View My Work
+                    </a>
+                    <a href="#contact" class="border-2 border-cyan-300 text-cyan-300 px-8 py-4 rounded-xl font-semibold hover:bg-cyan-300 hover:text-slate-900 transition-all duration-300 backdrop-blur-sm bg-white/10">
+                        Get In Touch
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 relative overflow-hidden">
+        <!-- Background Avatar -->
+        <div class="absolute inset-0 opacity-5">
+            <svg class="w-full h-full object-cover" viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+                <!-- Background -->
+                <defs>
+                    <linearGradient id="bgGradientBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#1e40af;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="skinGradientBg" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Background Circle -->
+                <circle cx="200" cy="200" r="200" fill="url(#bgGradientBg)"/>
+                
+                <!-- Professional Suit -->
+                <path d="M80 350 Q80 320 100 300 L120 280 Q140 270 160 275 L170 280 Q180 285 200 285 Q220 285 230 280 L240 275 Q260 270 280 280 L300 300 Q320 320 320 350 L320 400 L80 400 Z" fill="#1f2937"/>
+                
+                <!-- Shirt -->
+                <path d="M140 280 Q160 275 180 280 L185 285 Q190 290 200 290 Q210 290 215 285 L220 280 Q240 275 260 280 L260 350 L140 350 Z" fill="#ffffff"/>
+                
+                <!-- Tie -->
+                <path d="M190 290 Q195 295 200 300 Q205 295 210 290 L210 340 Q205 345 200 350 Q195 345 190 340 Z" fill="#1e40af"/>
+                
+                <!-- Face -->
+                <circle cx="200" cy="180" r="60" fill="url(#skinGradientBg)"/>
+                
+                <!-- Hair -->
+                <path d="M140 150 Q140 120 160 110 Q180 100 200 100 Q220 100 240 110 Q260 120 260 150 Q260 160 250 165 Q240 170 230 168 Q220 166 210 165 Q200 164 190 165 Q180 166 170 168 Q160 170 150 165 Q140 160 140 150 Z" fill="#374151"/>
+                
+                <!-- Eyes -->
+                <circle cx="185" cy="170" r="4" fill="#1f2937"/>
+                <circle cx="215" cy="170" r="4" fill="#1f2937"/>
+                <circle cx="186" cy="169" r="1" fill="#ffffff"/>
+                <circle cx="216" cy="169" r="1" fill="#ffffff"/>
+                
+                <!-- Eyebrows -->
+                <path d="M178 160 Q185 158 192 160" stroke="#374151" stroke-width="2" fill="none"/>
+                <path d="M208 160 Q215 158 222 160" stroke="#374151" stroke-width="2" fill="none"/>
+                
+                <!-- Nose -->
+                <path d="M198 180 Q200 185 202 180" stroke="#d97706" stroke-width="1" fill="none"/>
+                
+                <!-- Mouth -->
+                <path d="M190 195 Q200 205 210 195" stroke="#374151" stroke-width="2" fill="none"/>
+                
+                <!-- Glasses -->
+                <circle cx="185" cy="170" r="18" fill="none" stroke="#374151" stroke-width="2" opacity="0.8"/>
+                <circle cx="215" cy="170" r="18" fill="none" stroke="#374151" stroke-width="2" opacity="0.8"/>
+                <path d="M203 170 L197 170" stroke="#374151" stroke-width="2" opacity="0.8"/>
+                <path d="M167 170 Q160 165 155 170" stroke="#374151" stroke-width="2" fill="none" opacity="0.8"/>
+                <path d="M233 170 Q240 165 245 170" stroke="#374151" stroke-width="2" fill="none" opacity="0.8"/>
+            </svg>
+        </div>
+        
+        <!-- Content Overlay -->
+        <div class="relative z-10 bg-white/95 backdrop-blur-sm">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="fade-in">
+                    <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">About Me</h2>
+                    <div class="max-w-6xl mx-auto">
+                        <div class="grid lg:grid-cols-2 gap-12 items-center mb-12">
+                            <!-- Professional Photo -->
+                            <div class="flex justify-center lg:justify-end">
+                                <div class="relative">
+                                    <!-- Glowing border effect -->
+                                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 via-purple-500 to-cyan-500 rounded-2xl blur-lg opacity-75 animate-pulse"></div>
+                                    <div class="absolute inset-0 bg-gradient-to-r from-blue-600 via-purple-600 to-cyan-600 rounded-2xl blur-md opacity-50"></div>
+                                    
+                                    <!-- Photo container -->
+                                    <div class="relative bg-white p-2 rounded-2xl shadow-2xl">
+                                        <img src="images/img3.jpg" 
+                                             alt="My pic" 
+                                             class="w-80 h-96 object-cover rounded-xl shadow-lg"
+                                             onerror="this.src=''; this.alt='My pic'; this.className='w-80 h-96 bg-gradient-to-br from-blue-100 to-purple-100 rounded-xl flex items-center justify-center text-gray-600 text-center p-8 shadow-lg'; this.innerHTML='<div class=\'text-center\'><div class=\'w-20 h-20 bg-blue-500 rounded-full mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold\'>AC</div><p class=\'font-semibold\'>Alex Chen</p><p class=\'text-sm text-gray-500\'>AI/ML Engineer</p></div>';">
+                                    </div>
+                                    
+                                    <!-- Floating badges -->
+                                    <div class="absolute -top-4 -right-4 bg-blue-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg animate-bounce">
+                                        Software developer
+                                    </div>
+                                    <div class="absolute -bottom-4 -left-4 bg-purple-500 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg" style="animation-delay: 1s;">
+                                        web designer
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Biography Content -->
+                            <div class="space-y-6">
+                                <h3 class="text-2xl font-bold mb-6 text-primary">Professional Biography</h3>
+                                <p class="text-lg leading-relaxed">
+                                    Hi, I'm Kagiso, a tech enthusiast with a passion for creating practical digital solutions. I specialize in front-end development and educational content generation using AI. My projects focus on turning complex problems into user-friendly experiences, from interactive web applications to smart tools that make learning easier. 
+                                </p>
+                                <p class="text-lg leading-relaxed">
+                                    I'm constantly exploring new technologies and innovative approaches to help people learn, create, and engage with digital content in meaningful ways.
+                                </p>
+                                
+                                <!-- Quick stats -->
+                                <div class="grid grid-cols-2 gap-4 mt-8">
+                                    <div class="bg-blue-50 p-4 rounded-lg text-center">
+                                        <div class="text-2xl font-bold text-blue-600">5+</div>
+                                        <div class="text-sm text-gray-600">Projects Completed</div>
+                                    </div>
+                                    <div class="bg-purple-50 p-4 rounded-lg text-center">
+                                        <div class="text-2xl font-bold text-purple-600">94%</div>
+                                        <div class="text-sm text-gray-600">Model Accuracy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="grid md:grid-cols-3 gap-8 mt-12">
+                            <div class="text-center p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
+                                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-2 text-primary">Enterprise Solutions</h4>
+                                <p class="text-gray-600 text-sm">Develop cutting-edge AI solutions for enterprise applications</p>
+                            </div>
+                            
+                            <div class="text-center p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
+                                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M16,4C18.11,4 20.11,4.79 21.61,6.29C23.11,7.79 23.9,9.79 23.9,11.9C23.9,14.01 23.11,16.01 21.61,17.51C20.11,19.01 18.11,19.8 16,19.8H7C5.4,19.8 3.85,19.15 2.69,17.99C1.53,16.83 0.88,15.28 0.88,13.68C0.88,12.08 1.53,10.53 2.69,9.37C3.85,8.21 5.4,7.56 7,7.56H16M16,6H7C4.79,6 2.79,6.79 1.29,8.29C-0.21,9.79 -1,11.79 -1,14C-1,16.21 -0.21,18.21 1.29,19.71C2.79,21.21 4.79,22 7,22H16C19.31,22 22,19.31 22,16C22,12.69 19.31,10 16,10H7C6.45,10 5.95,10.2 5.59,10.56C5.23,10.92 5.03,11.42 5.03,11.97C5.03,12.52 5.23,13.02 5.59,13.38C5.95,13.74 6.45,13.94 7,13.94H16V15.94H7C5.9,15.94 4.97,15.01 4.97,13.91C4.97,12.81 5.9,11.88 7,11.88H16C18.21,11.88 20,13.67 20,15.88C20,18.09 18.21,19.88 16,19.88H7C5.4,19.88 3.85,19.23 2.69,18.07C1.53,16.91 0.88,15.36 0.88,13.76"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-2 text-primary">Team Leadership</h4>
+                                <p class="text-gray-600 text-sm">Lead cross-functional teams in AI/ML product development</p>
+                            </div>
+                            
+                            <div class="text-center p-6 bg-white/80 backdrop-blur-sm rounded-xl shadow-lg">
+                                <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                                    <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M12,2A3,3 0 0,1 15,5V11A3,3 0 0,1 12,14A3,3 0 0,1 9,11V5A3,3 0 0,1 12,2M19,11C19,14.53 16.39,17.44 13,17.93V21H11V17.93C7.61,17.44 5,14.53 5,11H7A5,5 0 0,0 12,16A5,5 0 0,0 17,11H19Z"/>
+                                    </svg>
+                                </div>
+                                <h4 class="text-lg font-semibold mb-2 text-primary">Open Source</h4>
+                                <p class="text-gray-600 text-sm">Contribute to open-source AI projects and research</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Projects Section -->
+    <section id="projects" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Featured Projects</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Project 1 - Resume Builder -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border-2 border-green-400">
+                        <div class="h-48 bg-gradient-to-br from-emerald-500 to-teal-600 flex items-center justify-center relative p-4">
+                            <div class="absolute top-2 right-2 bg-green-400 text-white px-3 py-1 rounded-full text-sm font-bold">
+                                Live
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=400&h=300&fit=crop&auto=format" 
+                                 alt="Resume Builder Application Screenshot" 
+                                 class="w-full h-full object-cover rounded-lg shadow-lg"
+                                 onerror="this.src=''; this.alt='Resume Builder - Interactive web application for creating professional resumes'; this.className='w-32 h-32 bg-white bg-opacity-20 rounded-lg flex items-center justify-center text-white text-center p-4 text-sm font-medium';">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Professional Resume Builder</h3>
+                            <p class="text-gray-600 mb-4">
+                                A web-based assistant for crafting job-ready resumes and cover letters. Choose from Modern, Classic, or Professional templates, paste in a job description, and the tool helps you optimize your resume for ATS screening and relevance making job applications faster, smarter, and more polished.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">HTML5</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CSS3</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">JavaScript</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://kagisogotech.github.io/Resumebuilder/welcome.html" target="_blank" class="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors text-center font-semibold">
+                                    Try Live App
+                                </a>
+                                <button onclick="openGithub('resumebuilder')" class="flex-1 border border-primary text-primary py-2 px-4 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                    GitHub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 - Sentiment Analysis -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border-2 border-green-400">
+                        <div class="h-48 bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center relative p-4">
+                            <div class="absolute top-2 right-2 bg-green-400 text-white px-3 py-1 rounded-full text-sm font-bold">
+                                Live
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=400&h=300&fit=crop&auto=format" 
+                                 alt="Sentiment Analysis Dashboard with Text Processing" 
+                                 class="w-full h-full object-cover rounded-lg shadow-lg"
+                                 onerror="this.src=''; this.alt='Sentiment Analysis Tool - Real-time text sentiment classification'; this.className='w-32 h-32 bg-white bg-opacity-20 rounded-lg flex items-center justify-center text-white text-center p-4 text-sm font-medium';">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">Sentiment Analysis Tool</h3>
+                            <p class="text-gray-600 mb-4">
+                                A user-friendly web tool for extracting emotional tone from text data. Whether you're analyzing a single sentence or uploading a CSV/TXT batch (up to 5 MB), the dashboard reports positive, neutral, and negative sentiment along with confidence levels and key sentiment-driving words.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">HTML5</span>
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">CSS3</span>
+                                <span class="px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm">JavaScript</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://kagisogotech.github.io/SentimentAnalysis/" target="_blank" class="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors text-center font-semibold">
+                                    Try Live App
+                                </a>
+                                <button onclick="openGithub('sentimentanalysis')" class="flex-1 border border-primary text-primary py-2 px-4 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                    GitHub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 - AI Study Buddy -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border-2 border-green-400">
+                        <div class="h-48 bg-gradient-to-br from-green-500 to-teal-600 flex items-center justify-center relative p-4">
+                            <div class="absolute top-2 right-2 bg-green-400 text-white px-3 py-1 rounded-full text-sm font-bold">
+                                Live
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=400&h=300&fit=crop&auto=format" 
+                                 alt="AI Study Buddy - Interactive Learning Platform" 
+                                 class="w-full h-full object-cover rounded-lg shadow-lg"
+                                 onerror="this.src=''; this.alt='AI Study Buddy - End-to-end AI-powered learning platform'; this.className='w-32 h-32 bg-white bg-opacity-20 rounded-lg flex items-center justify-center text-white text-center p-4 text-sm font-medium';">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">AI Study Buddy Platform</h3>
+                            <p class="text-gray-600 mb-4">
+                                A conversational learning tool that helps you deepen your understanding of any subject. Ask questions, get clear explanations and examples, and practice with quiz-style exercises. Great for self-study and revision, this tool adapts to your pace so you can focus on where you need it most
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm">React</span>
+                                <span class="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">Node.js</span>
+                                <span class="px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm">AI/ML</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <a href="https://ai-study-buddy-bmwm.vercel.app/" target="_blank" class="flex-1 bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition-colors text-center font-semibold">
+                                    Try Live App
+                                </a>
+                                <button onclick="openGithub('studybuddy')" class="flex-1 border border-primary text-primary py-2 px-4 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                    GitHub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 - Capstone -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden card-hover border-2 border-yellow-400">
+                        <div class="h-48 bg-gradient-to-br from-purple-500 to-pink-600 flex items-center justify-center relative p-4">
+                            <div class="absolute top-2 right-2 bg-blue-400 text-white px-3 py-1 rounded-full text-sm font-bold">
+                                Capstone
+                            </div>
+                            <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=400&h=300&fit=crop&auto=format" 
+                                 alt="AI Recommendation Engine with Neural Networks" 
+                                 class="w-full h-full object-cover rounded-lg shadow-lg"
+                                 onerror="this.src=''; this.alt='AI-Powered Recommendation Engine - End-to-end system with real-time personalization'; this.className='w-32 h-32 bg-white bg-opacity-20 rounded-lg flex items-center justify-center text-white text-center p-4 text-sm font-medium';">
+                        </div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-3 text-gray-800">AI-Powered Recommendation Engine</h3>
+                            <p class="text-gray-600 mb-4">
+                                End-to-end recommendation system using collaborative filtering and deep learning. 
+                                Handles 1M+ users with real-time personalization.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="px-3 py-1 bg-indigo-100 text-indigo-800 rounded-full text-sm">PyTorch</span>
+                                <span class="px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm">AWS</span>
+                                <span class="px-3 py-1 bg-gray-100 text-gray-800 rounded-full text-sm">Docker</span>
+                            </div>
+                            <div class="flex gap-3">
+                                <button onclick="openCapstoneDemo()" class="flex-1 bg-blue-500 text-white py-2 px-4 rounded-lg hover:bg-blue-600 transition-colors font-semibold">
+                                    Showcase Demo
+                                </button>
+                                <button onclick="openGithub('capstone')" class="flex-1 border border-primary text-primary py-2 px-4 rounded-lg hover:bg-primary hover:text-white transition-colors">
+                                    GitHub
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Certificates Section -->
+    <section id="certificates" class="py-16 bg-gradient-to-br from-blue-50 to-purple-50">
+        <!-- Moving Background shapes -->
+         <div class="absolute inset-0 overflow-hidden">
+            <div class="certificates-shape certificates-shape-1">
+                <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="40" cy="40" r="40" fill="url(#certGrad1)"/>
+                    <defs>
+                        <linearGradient id="certGrad1" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#dbeafe;stop-opacity:0.6" />
+                            <stop offset="100%" style="stop-color:#bfdbfe;stop-opacity:0.4" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="certificates-shape certificates-shape-2">
+                <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="60" height="60" rx="15" fill="url(#certGrad2)"/>
+                    <defs>
+                        <linearGradient id="certGrad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#e0e7ff;stop-opacity:0.5" />
+                            <stop offset="100%" style="stop-color:#c7d2fe;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="certificates-shape certificates-shape-3">
+                <svg width="70" height="70" viewBox="0 0 70 70" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <polygon points="35,5 65,65 5,65" fill="url(#certGrad3)"/>
+                    <defs>
+                        <linearGradient id="certGrad3" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fef3c7;stop-opacity:0.6" />
+                            <stop offset="100%" style="stop-color:#fde68a;stop-opacity:0.4" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="certificates-shape certificates-shape-4">
+                <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M25 0L31.25 18.75L50 25L31.25 31.25L25 50L18.75 31.25L0 25L18.75 18.75L25 0Z" fill="url(#certGrad4)"/>
+                    <defs>
+                        <linearGradient id="certGrad4" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#dcfce7;stop-opacity:0.5" />
+                            <stop offset="100%" style="stop-color:#bbf7d0;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="certificates-shape certificates-shape-5">
+                <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <ellipse cx="32.5" cy="32.5" rx="32.5" ry="20" fill="url(#certGrad5)"/>
+                    <defs>
+                        <linearGradient id="certGrad5" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#fce7f3;stop-opacity:0.6" />
+                            <stop offset="100%" style="stop-color:#fbcfe8;stop-opacity:0.4" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+            <div class="certificates-shape certificates-shape-6">
+                <svg width="55" height="55" viewBox="0 0 55 55" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="27.5" cy="27.5" r="27.5" fill="url(#certGrad6)"/>
+                    <defs>
+                        <linearGradient id="certGrad6" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#ecfdf5;stop-opacity:0.5" />
+                            <stop offset="100%" style="stop-color:#d1fae5;stop-opacity:0.3" />
+                        </linearGradient>
+                    </defs>
+                </svg>
+            </div>
+        </div>
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Professional Certifications</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Certificate 1 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-blue-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">AI for Everyone</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Gaining a solid understanding of how artificial intelligence can be applied across industries.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('AI for Everyone')" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+
+                    <!-- Certificate 2 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">AI on Azure</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('AI')" class="text-green-600 hover:text-green-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 3 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">AI Essentials</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('AI_Essential')" class="text-green-600 hover:text-green-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 4 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Building AI powered Chatbots</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('Building AI')" class="text-purple-600 hover:text-purple-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 5 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-blue-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Generative AI</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('Gen')" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 6 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Introduction to AI</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-green-100 text-green-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('Intro')" class="text-green-600 hover:text-green-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 7 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Introduction to Gen AI</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('Intro to Gen')" class="text-purple-600 hover:text-purple-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 8 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-blue-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Introduction to Responsible AI</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('Intro to Res')" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 9 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-green-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-green-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Prompt Engineering with Chatgpt</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-green-100 text-blue-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('Prompt')" class="text-green-600 hover:text-green-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 10 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-purple-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Python for Data Science</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-purple-100 text-purple-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('python')" class="text-purple-600 hover:text-purple-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                    <!-- Certificate 11 -->
+                    <div class="bg-white rounded-xl shadow-lg p-6 card-hover border-l-4 border-blue-500">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center mr-4">
+                                <svg class="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-gray-800">Trustworthy AI</h3>
+                                <p class="text-sm text-gray-600">Coursera</p>
+                            </div>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-3">Professional certification in deep learning, neural networks, and TensorFlow framework.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">2025</span>
+                            <button onclick="viewCertificate('Trust')" class="text-blue-600 hover:text-blue-800 text-sm font-medium">View →</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Technical Skills & Competencies</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <h3 class="text-2xl font-bold mb-8 text-primary">Programming & Frameworks</h3>
+                        <div class="space-y-6">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Html,Css</span>
+                                    <span class="text-gray-600">95%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-primary h-3 rounded-full" data-width="95"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Python</span>
+                                    <span class="text-gray-600">90%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-primary h-3 rounded-full" data-width="90"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">PyTorch</span>
+                                    <span class="text-gray-600">85%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-primary h-3 rounded-full" data-width="85"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Scikit-learn</span>
+                                    <span class="text-gray-600">92%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-primary h-3 rounded-full" data-width="92"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-8 text-primary">Data & Cloud Technologies</h3>
+                        <div class="space-y-6">
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">SQL/NoSQL</span>
+                                    <span class="text-gray-600">88%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-secondary h-3 rounded-full" data-width="88"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">AWS/Azure</span>
+                                    <span class="text-gray-600">80%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-secondary h-3 rounded-full" data-width="80"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Docker/Kubernetes</span>
+                                    <span class="text-gray-600">75%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-secondary h-3 rounded-full" data-width="75"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="flex justify-between mb-2">
+                                    <span class="font-semibold">Apache Spark</span>
+                                    <span class="text-gray-600">70%</span>
+                                </div>
+                                <div class="w-full bg-gray-200 rounded-full h-3">
+                                    <div class="skill-bar bg-secondary h-3 rounded-full" data-width="70"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 gradient-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold mb-8">Let's Build Something Amazing Together</h2>
+                <p class="text-xl mb-12 max-w-2xl mx-auto">
+                    Ready to discuss AI/ML opportunities? I'm always excited to connect with fellow innovators 
+                    and explore how we can create intelligent solutions that make a difference.
+                </p>
+                
+                <!-- Professional Links -->
+                <div class="grid md:grid-cols-3 gap-8 mb-12">
+                    <a href="mailto:kagisothierry31@gmail.com" class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-30 transition-all card-hover">
+                        <svg class="w-12 h-12 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"/>
+                        </svg>
+                        
+                        <h3 class="text-lg font-semibold mb-2">Email</h3>
+                        
+                    </a>
+                    
+                    <a href="https://linkedin.com/in/kagiso-monene/" target="_blank" class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-30 transition-all card-hover">
+                        <svg class="w-12 h-12 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"/>
+                        </svg>
+                        <h3 class="text-lg font-semibold mb-2">LinkedIn</h3>
+                        <p>Professional Profile</p>
+                    </a>
+                    
+                    <a href="https://github.com/kagisogotech" target="_blank" class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-6 hover:bg-opacity-30 transition-all card-hover">
+                        <svg class="w-12 h-12 mx-auto mb-4" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+                        </svg>
+                        <h3 class="text-lg font-semibold mb-2">GitHub</h3>
+                        <p>Code Repository</p>
+                    </a>
+                </div>
+
+                <!-- Resume Download -->
+                <div class="bg-white bg-opacity-20 backdrop-blur-lg rounded-xl p-8 max-w-md mx-auto">
+                    <h3 class="text-xl font-semibold mb-4">Download Resume</h3>
+                    <p class="mb-6">ATS-optimized resume with AI/ML keywords and project highlights</p>
+                    <button onclick="downloadResume()" class="bg-blue-500 text-white px-8 py-3 rounded-lg font-semibold hover:bg-blue-600 transition-colors">
+                        Download PDF Resume
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+     <!-- Mini Chatbot -->
+    <div id="chatbot-container" class="fixed bottom-6 right-6 z-50">
+        <!-- Chat Toggle Button -->
+        <button id="chat-toggle" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white w-16 h-16 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center group hover:scale-110">
+            <svg id="chat-icon" class="w-8 h-8 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"></path>
+            </svg>
+            <svg id="close-icon" class="w-6 h-6 hidden transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+        </button>
+        
+        <!-- Notification Badge -->
+        <div id="chat-notification" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs w-6 h-6 rounded-full flex items-center justify-center font-bold animate-pulse">
+            !
+        </div>
+
+        <!-- Chat Window -->
+        <div id="chat-window" class="absolute bottom-20 right-0 w-80 h-96 bg-white rounded-2xl shadow-2xl border border-gray-200 hidden flex-col overflow-hidden">
+            <!-- Chat Header -->
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 text-white p-4 flex items-center space-x-3">
+                <div class="w-10 h-10 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+                    <span class="text-sm font-bold">AI</span>
+                </div>
+                <div>
+                    <h3 class="font-semibold">Kagiso's AI Assistant</h3>
+                    <p class="text-xs opacity-90">Ask me about Kagiso's work!</p>
+                </div>
+                <div class="ml-auto">
+                    <div class="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
+                </div>
+            </div>
+
+            <!-- Chat Messages -->
+            <div id="chat-messages" class="flex-1 p-4 overflow-y-auto space-y-3 bg-gray-50">
+                <div class="flex items-start space-x-2">
+                    <div class="w-8 h-8 bg-blue-500 rounded-full flex items-center justify-center text-white text-xs font-bold">
+                        AI
+                    </div>
+                    <div class="bg-white p-3 rounded-lg shadow-sm max-w-xs">
+                        <p class="text-sm">Hi! I'm Kagiso's AI assistant. I can help you learn about his projects, skills, and experience. What would you like to know?</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quick Actions -->
+            <div id="quick-actions" class="p-3 border-t border-gray-200 bg-white">
+                <div class="flex flex-wrap gap-2 mb-3">
+                    <button onclick="sendQuickMessage('Tell me about Kagiso\'s projects')" class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-xs hover:bg-blue-200 transition-colors">
+                        Projects
+                    </button>
+                    <button onclick="sendQuickMessage('What are Kagiso\'s skills?')" class="bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-xs hover:bg-purple-200 transition-colors">
+                        Skills
+                    </button>
+                    <button onclick="sendQuickMessage('How can I contact Kagiso?')" class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-xs hover:bg-green-200 transition-colors">
+                        Contact
+                    </button>
+                </div>
+            </div>
+
+            <!-- Chat Input -->
+            <div class="p-3 border-t border-gray-200 bg-white">
+                <div class="flex space-x-2">
+                    <input id="chat-input" type="text" placeholder="Ask me anything..." class="flex-1 border border-gray-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent">
+                    <button id="send-button" onclick="sendMessage()" class="bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+        <div class="max-w-6xl mx-auto px-4 text-center">
+            <p class="text-gray-400 mb-4">© 2025 Kagiso Monene. All rights reserved.</p>
+            <p class="text-sm text-gray-500">
+                Kagiso Monene
+            </p>
+        </div>
+    </footer>
+
+    <!-- Demo Modal -->
+    <div id="demo-modal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-xl p-8 max-w-2xl mx-4 max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 id="demo-title" class="text-2xl font-bold text-gray-800"></h3>
+                <button onclick="closeModal()" class="text-gray-500 hover:text-gray-700">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="demo-content" class="text-gray-600">
+                <!-- Demo content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+</html>
