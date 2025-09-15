@@ -44,9 +44,28 @@ tailwind.config = {
         }
 
         // Mobile menu toggle
-        document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+        document.getElementById('mobile-menu-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+            
+            if (!mobileMenu.contains(e.target) && !mobileMenuBtn.contains(e.target)) {
+                mobileMenu.classList.add('hidden');
+            }
+        });
+
+        // Close mobile menu when clicking on menu items
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', function() {
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
         });
 
         // Smooth scrolling for navigation links
