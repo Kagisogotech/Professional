@@ -825,6 +825,163 @@
             </div>
         </div>
     </section>
+    <!-- Project Documentation Section -->
+    <section id="documentation" class="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="fade-in">
+                <h2 class="text-4xl font-bold text-center mb-16 text-gray-800">Project Documentation & Technical Details</h2>
+                
+                <!-- Documentation Grid -->
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Resume Builder Documentation -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-green-500">
+                        <div class="bg-gradient-to-r from-emerald-500 to-teal-600 p-4 text-white">
+                            <h3 class="text-lg font-bold mb-1">Resume Builder</h3>
+                            <p class="text-sm text-emerald-100">ATS-Optimized Platform</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold mb-2 text-gray-800">Tech Stack</h4>
+                                <div class="space-y-1 text-xs text-gray-600">
+                                    <div>• Vanilla JS + ES6 modules</div>
+                                    <div>• Custom CSS Grid layouts</div>
+                                    <div>• LocalStorage persistence</div>
+                                    <div>• jsPDF integration</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold mb-2 text-gray-800">Features</h4>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="bg-green-50 p-2 rounded text-center">
+                                        <div class="text-xs font-medium text-green-800">Real-time</div>
+                                    </div>
+                                    <div class="bg-green-50 p-2 rounded text-center">
+                                        <div class="text-xs font-medium text-green-800">ATS Ready</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2">
+                                <button onclick="showTechnicalDetails('resume')" class="w-full bg-green-600 text-white py-2 px-3 rounded text-xs font-semibold hover:bg-green-700 transition-colors">
+                                    Technical Details
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sentiment Analysis Documentation -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-blue-500">
+                        <div class="bg-gradient-to-r from-blue-500 to-purple-600 p-4 text-white">
+                            <h3 class="text-lg font-bold mb-1">Sentiment Analysis</h3>
+                            <p class="text-sm text-blue-100">ML Classification Tool</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold mb-2 text-gray-800">ML Stack</h4>
+                                <div class="space-y-1 text-xs text-gray-600">
+                                    <div>• VADER algorithm</div>
+                                    <div>• Custom preprocessing</div>
+                                    <div>• Confidence scoring</div>
+                                    <div>• D3.js visualization</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold mb-2 text-gray-800">Performance</h4>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="bg-blue-50 p-2 rounded text-center">
+                                        <div class="text-xs font-medium text-blue-800">87% Acc</div>
+                                    </div>
+                                    <div class="bg-blue-50 p-2 rounded text-center">
+                                        <div class="text-xs font-medium text-blue-800">&lt;200ms</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2">
+                                <button onclick="showTechnicalDetails('sentiment')" class="w-full bg-blue-600 text-white py-2 px-3 rounded text-xs font-semibold hover:bg-blue-700 transition-colors">
+                                    ML Architecture
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- AI Study Buddy Documentation -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden border-l-4 border-green-500">
+                        <div class="bg-gradient-to-r from-green-500 to-teal-600 p-4 text-white">
+                            <h3 class="text-lg font-bold mb-1">AI Study Buddy</h3>
+                            <p class="text-sm text-green-100">Full-Stack Platform</p>
+                        </div>
+                        <div class="p-4">
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold mb-2 text-gray-800">Architecture</h4>
+                                <div class="space-y-1 text-xs text-gray-600">
+                                    <div>• React + TypeScript</div>
+                                    <div>• Node.js + Express API</div>
+                                    <div>• MongoDB database</div>
+                                    <div>• Vercel deployment</div>
+                                </div>
+                            </div>
+                            
+                            <div class="mb-4">
+                                <h4 class="text-sm font-semibold mb-2 text-gray-800">AI Features</h4>
+                                <div class="grid grid-cols-2 gap-2">
+                                    <div class="bg-green-50 p-2 rounded text-center">
+                                        <div class="text-xs font-medium text-green-800">Adaptive</div>
+                                    </div>
+                                    <div class="bg-green-50 p-2 rounded text-center">
+                                        <div class="text-xs font-medium text-green-800">Smart Quiz</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="flex gap-2">
+                                <button onclick="showTechnicalDetails('studybuddy')" class="w-full bg-green-600 text-white py-2 px-3 rounded text-xs font-semibold hover:bg-green-700 transition-colors">
+                                    System Design
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Technical Summary -->
+                <div class="mt-12 bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-2xl font-bold mb-6 text-center text-gray-800">Development Methodology & Best Practices</h3>
+                    <div class="grid md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,16.5L6.5,12L7.91,10.59L11,13.67L16.59,8.09L18,9.5L11,16.5Z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold mb-2">Agile Development</h4>
+                            <p class="text-gray-600">Iterative development with continuous integration and deployment pipelines</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-green-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M19,3H5C3.9,3 3,3.9 3,5V19C3,20.1 3.9,21 5,21H19C20.1,21 21,20.1 21,19V5C21,3.9 20.1,3 19,3M19,19H5V5H19V19Z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold mb-2">Testing Strategy</h4>
+                            <p class="text-gray-600">Comprehensive unit, integration, and end-to-end testing with 90%+ coverage</p>
+                        </div>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-purple-600" fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z"/>
+                                </svg>
+                            </div>
+                            <h4 class="text-lg font-semibold mb-2">Performance Optimization</h4>
+                            <p class="text-gray-600">Code profiling, caching strategies, and scalable architecture design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
 
     <!-- Skills Section -->
