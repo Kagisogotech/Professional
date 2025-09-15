@@ -705,6 +705,42 @@ tailwind.config = {
             document.body.appendChild(modal);
         }
 
+ // Document viewer function - displays documents in modal
+        function viewDocumentation(docPath, title) {
+            // Create modal overlay
+            const modal = document.createElement('div');
+            modal.className = 'fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4';
+            modal.innerHTML = `
+                <div class="bg-white rounded-xl max-w-6xl w-full max-h-[90vh] overflow-hidden flex flex-col">
+                    <div class="flex justify-between items-center p-6 border-b border-gray-200">
+                        <h3 class="text-2xl font-bold text-gray-800">${title}</h3>
+                        <button onclick="this.closest('.fixed').remove()" class="text-gray-500 hover:text-gray-700 text-2xl font-bold">&times;</button>
+                    </div>
+                    <div class="flex-1 overflow-hidden">
+                        <iframe src="${docPath}" class="w-full h-full border-0" style="min-height: 600px;">
+                            <div class="p-6 text-center">
+                                <p class="text-gray-600 mb-4">Unable to display document in browser.</p>
+                                <a href="${docPath}" download class="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-semibold inline-block">
+                                    📄 Download Document
+                                </a>
+                            </div>
+                        </iframe>
+                    </div>
+                    <div class="p-6 border-t border-gray-200 text-center bg-gray-50">
+                        <div class="flex gap-4 justify-center">
+                            <a href="${docPath}" download class="bg-green-600 text-white px-6 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold">
+                                📥 Download Document
+                            </a>
+                            <button onclick="this.closest('.fixed').remove()" class="bg-gray-600 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors font-semibold">
+                                Close Viewer
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `;
+            document.body.appendChild(modal);
+        }
+
         // Initialize animations
         window.addEventListener('scroll', () => {
             animateOnScroll();
